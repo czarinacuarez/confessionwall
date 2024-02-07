@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession Wall</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+<body>
+
+    <section class = "py-5">
+
+        <div class = "flex items-center justify-center">
+            <form class="w-3/5" action="" id="confession">
+                <div class = "flex flex-col-2 justify-center gap-5">
+                    <div class = "w-3/5">
+                        <h1 class = "text-xl font-bold text-gray-600 py-2 ">Create a Secret Message</h1>
+                        <div class ="py-2">
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">To:</label>
+                            <input type="text"  id="name" class="border border-gray-300 text-gray-900 text-sm rounded-lg  focus:outline-none block w-full p-2.5" required>
+                        </div>
+                        <div class ="py-2">
+                            <label for="program" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program:</label>
+                            <select name="program" id="program" class=" border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 focus:outline-none" required>
+                                <option disabled selected value="" class=" border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5">Select a Program</option>
+                                <option value="Bachelor of Science in Information Technology" id="program" class=" border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5" required>Bachelor of Science in Information Technology</option>
+                                <option value="program" id="program" class=" border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5" required></option>
+                                <option value="program" id="program" class=" border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5" required></option>
+                            </select>
+                        </div>
+                        <div class ="py-2">
+                            <label for="msgContent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message:</label>
+                            <textarea name="msgContent" id="msgContent" class="border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 focus:outline-none" placeholder="Type your message here" required></textarea>
+                        </div>
+                        <div class="flex items-center py-3">
+                            <button type="submit" id="submit" class="w-1/4  mx-auto text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Post</button>
+                        </div>
+                    </div>
+                    <div class="flex md:flex-col flex-row gap-4 justify-center">
+                        <input type="radio" name="color" id="red" value="red" class="custom-radio" required>
+                        <input type="radio" name="color" id="yellow" value="yellow" class="custom-radio" required>
+                        <input type="radio" name="color" id="blue" value="blue" class="custom-radio" required>
+                        <input type="radio" name="color" id="purple" value="purple" class="custom-radio" required>
+                        <input type="radio" name="color" id="green" value="green" class="custom-radio" required>
+                        <input type="radio" name="color" id="pink" value="pink" class="custom-radio" required>
+
+
+                </div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </section>
+   
+
+    
+
+    
+
+    <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+
+
+</body>
+</html>

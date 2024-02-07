@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confession Wall</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="" id="confession">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="emailid" placeholder="Your Email....." />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+       
+
+    </div>
+
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search by name..." oninput="liveSearch()">
+        <div id="searchResults"></div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-2" id="messagesContainer">
+        <h1 id = "messagename"></h1>
+        <h1 id = "messageemail"></h1>
+        <h1 id = "messagecontent"></h1>
+
+    </div>
+
+    
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./firebase.js"></script>
+
+</body>
+</html>
